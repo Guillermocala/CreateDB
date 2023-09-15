@@ -14,10 +14,10 @@ namespace CreateDb
             builder.Services.AddRazorPages();
 
 
-            builder.Services.AddDbContext<SchoolContext>(options =>
+            builder.Services.AddDbContext<TestContext>(options =>
             {
                 // Server=(localdb)\\name
-                options.UseSqlServer("Server=(localdb)\\Local;Database=SchoolDB;Trusted_Connection=True;TrustServerCertificate=True;");
+                options.UseSqlServer("Server=(localdb)\\Local;Database=TestDB;Trusted_Connection=True;TrustServerCertificate=True;");
             });
                 
 
